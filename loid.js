@@ -7,7 +7,7 @@ const collectBlock = require('mineflayer-collectblock').plugin
 const { Vec3 } = require('vec3')
 const fs = require('fs')
 const path = require('path')
-const { EventEmitter } = require('events')
+const { EventEmitter } = require('events')      
 
 // === FIX for deprecated physicTick event ===
 const oldEmit = EventEmitter.prototype.emit
@@ -155,7 +155,7 @@ bot.on('chat', async (username, message) => {
   if (msg === 'sword') await equipTool('sword', 'Sword')
 
   // === GIVE TOOL ===
-  if (msg.startsWith('give tool ')) {
+  if (msg.startsWith('give ')) {
     const toolName = msg.split(' ')[2]
     const item = bot.inventory.items().find(i => i.name.includes(toolName))
     if (item && player) {
@@ -263,3 +263,4 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
