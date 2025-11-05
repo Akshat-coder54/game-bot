@@ -78,7 +78,7 @@ bot.on('chat', async (username, message) => {
   }
 
   // === SLEEP / WAKE ===
-  if (msg === 'sleep') {
+  if (msg === 'rest') {
     const bed = bot.findBlock({ matching: block => block.name.includes('bed'), maxDistance: 16 })
     if (!bed) return bot.chat('❌ No bed nearby!')
     try {
@@ -263,4 +263,5 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
