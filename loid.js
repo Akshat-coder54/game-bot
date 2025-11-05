@@ -110,7 +110,7 @@ bot.on('chat', async (username, message) => {
     bot.chat(`📍 X=${p.x.toFixed(1)}, Y=${p.y.toFixed(1)}, Z=${p.z.toFixed(1)}`)
   }
 
-  if (msg === 'help') {
+  if (msg === 'quit') {
     bot.chat('§6==== 🐝 KillerBEE Commands ====')
     bot.chat('§eGeneral: §fhello, time, help, position')
     bot.chat('§eMovement: §ffollow me, come here, stop')
@@ -263,5 +263,6 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
