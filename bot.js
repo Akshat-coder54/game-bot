@@ -8,8 +8,8 @@ const { Vec3 } = require('vec3')
 
 // === BOT CONFIGURATION ===
 const bot = mineflayer.createBot({
-  host: 'localhost',     
-  port: 65207,           
+  host: 'localhost', //hre you can write host if its multiplayer     
+  port: 65207,// port which u get through LAN or server address           
   username: 'killerBEE', 
   version: '1.20.4',
   auth: 'offline'
@@ -226,3 +226,4 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
