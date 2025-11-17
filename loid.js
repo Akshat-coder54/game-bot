@@ -20,7 +20,7 @@ EventEmitter.prototype.emit = function (event, ...args) {
 const respawnFile = path.join(__dirname, 'respawn.json')
 const bot = mineflayer.createBot({
   host: 'localhost',
-  port: 63891,
+  port: 63831,
   username: 'miss_killer',
   version: '1.20.4',
   auth: 'offline'
@@ -263,6 +263,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
