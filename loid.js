@@ -19,9 +19,9 @@ EventEmitter.prototype.emit = function (event, ...args) {
 // === CONFIG ===
 const respawnFile = path.join(__dirname, 'respawn.json')
 const bot = mineflayer.createBot({
-  host: 'localhost',
-  port: 63831,
-  username: 'miss_killer',
+  host: 'localhost',//here change host if its multiplayer 
+  port: 63831,//here change port if its LAN and multiplayer then there port number given
+  username: 'miss_killer',//change name as you like
   version: '1.20.4',
   auth: 'offline'
 })
@@ -263,6 +263,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
