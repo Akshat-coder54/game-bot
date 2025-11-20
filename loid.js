@@ -165,7 +165,7 @@ bot.on('chat', async (username, message) => {
   }
 
   // === COMBAT ===
-  if (msg === 'equip weapon') await equipTool('sword', 'Weapon')
+  if (msg === ' weapon') await equipTool('sword', 'Weapon')
   if (msg === 'attack') {
     const mob = bot.nearestEntity(e => e.type === 'mob')
     if (!mob) return bot.chat('😕 No mobs nearby.')
@@ -263,6 +263,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
