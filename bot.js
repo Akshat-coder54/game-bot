@@ -69,7 +69,7 @@ bot.on('chat', async (username, message) => {
   const msg = message.toLowerCase().trim()
 
   // === WAKE UP ===
-  if (msg === 'wake up') {
+  if (msg === 'wakeup') {
     manualWakeUp = true
     if (bot.isSleeping) {
       try {
@@ -226,6 +226,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
