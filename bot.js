@@ -46,7 +46,7 @@ setInterval(async () => {
   if (isNight && !bot.isSleeping) {
     const bed = bot.findBlock({
       matching: block => block.name.includes('bed'),
-      maxDistance: 10
+      maxDistance: 11
     })
     if (bed) {
       try {
@@ -226,6 +226,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
