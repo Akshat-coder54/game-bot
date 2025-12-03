@@ -74,7 +74,7 @@ bot.on('chat', async (username, message) => {
     if (bot.isSleeping) {
       try {
         await bot.wake()
-        bot.chat('🌞 I’m awake and ready again!')
+        bot.chat('🌞 I’m awake & ready again!')
         sleeping = false
       } catch (err) {
         bot.chat('⚠️ Could not wake up: ' + err.message)
@@ -226,6 +226,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
