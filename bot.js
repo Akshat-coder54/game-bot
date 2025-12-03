@@ -143,7 +143,7 @@ bot.on('chat', async (username, message) => {
     bot.pvp.attack(mob)
   }
 
-  if (msg === 'stop attack') {
+  if (msg === 'stop atk') {
     bot.pvp.stop()
     bot.chat('🛑 Stopped attacking.')
   }
@@ -226,6 +226,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
