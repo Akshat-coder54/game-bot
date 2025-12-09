@@ -139,7 +139,7 @@ bot.on('chat', async (username, message) => {
     bot.chat('🛑 Stopped.')
   }
 
-  // === TOOL HANDLER ===
+  // === TOOL HANDLEr ===
   const equipTool = async (toolName, label) => {
     const item = bot.inventory.items().find(i => i.name.includes(toolName))
     if (item) {
@@ -263,6 +263,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
