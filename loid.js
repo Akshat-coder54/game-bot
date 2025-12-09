@@ -38,7 +38,7 @@ bot.once('spawn', () => {
   const mcData = require('minecraft-data')(bot.version)
   bot.pathfinder.setMovements(new Movements(bot, mcData))
 
-  // Load saved respawn if exists
+  // Load saved respawn if exist
   if (fs.existsSync(respawnFile)) {
     const data = JSON.parse(fs.readFileSync(respawnFile))
     bot.spawnPoint = new Vec3(data.x, data.y, data.z)
@@ -263,6 +263,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
