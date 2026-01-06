@@ -16,7 +16,7 @@ EventEmitter.prototype.emit = function (event, ...args) {
   return oldEmit.call(this, event, ...args)
 }
 
-// === CONFIG ===
+// === CONFIGs ===
 const respawnFile = path.join(__dirname, 'respawn.json')
 const bot = mineflayer.createBot({
   host: 'localhost',//here change host if its multiplayer 
@@ -263,6 +263,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
