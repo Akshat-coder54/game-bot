@@ -57,7 +57,7 @@ setInterval(async () => {
         bot.chat('⚠️ Could not sleep: ' + err.message)
       }
     } else {
-      bot.chat('🌙 It’s night but I can’t find a bed nearby.')
+      bot.chat('🌙 It’s night but I can’t find a bed nearby .')
     }
   }
 }, 5000)
@@ -226,6 +226,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
