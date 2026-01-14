@@ -26,7 +26,7 @@ const bot = mineflayer.createBot({
   auth: 'offline'
 })
 
-// === LOAD PLUGIN  ===
+// === LOAD PLUGIN ===
 bot.loadPlugin(pathfinder)
 bot.loadPlugin(pvp)
 bot.loadPlugin(armorManager)
@@ -263,6 +263,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
