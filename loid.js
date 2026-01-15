@@ -22,7 +22,7 @@ const bot = mineflayer.createBot({
   host: 'localhost',//here change host if its multiplayer 
   port: 63831,//here change port if its LAN and multiplayer then there port number given
   username: 'miss_killer',//change name as you like
-  version: '1.20.4',
+  version: '1.20.1',
   auth: 'offline'
 })
 
@@ -263,6 +263,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
