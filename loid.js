@@ -32,7 +32,7 @@ bot.loadPlugin(pvp)
 bot.loadPlugin(armorManager)
 bot.loadPlugin(collectBlock)
 
-// === ON SPAWN EVENTs ===
+// === ON SPAWN EVENT ===
 bot.once('spawn', () => {
   bot.chat('⚙️ KillerBEE online — ready for your command, master!')
   const mcData = require('minecraft-data')(bot.version)
@@ -263,6 +263,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
