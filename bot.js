@@ -6,7 +6,7 @@ const pvp = require('mineflayer-pvp').plugin
 const collectBlock = require('mineflayer-collectblock').plugin
 const { Vec3 } = require('vec3')
 
-// === BOT CONFIGURATION===
+// === BOT CONFIGURATION ===
 const bot = mineflayer.createBot({
   host: 'localhost', //hre you can write host if its multiplayer     
   port: 65215,// port which u get through LAN or server address           
@@ -226,6 +226,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
