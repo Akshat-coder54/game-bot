@@ -62,7 +62,7 @@ setInterval(async () => {
   }
 }, 5000)
 
-// === CHAT COMMANDs HANDLER ===
+// === CHAT COMMANDs HANDLER===
 bot.on('chat', async (username, message) => {
   if (username === bot.username) return
   const player = bot.players[username]?.entity
@@ -226,6 +226,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
