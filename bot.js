@@ -32,7 +32,7 @@ bot.once('spawn', () => {
 bot.on('error', err => console.log('⚠️ Error:', err))
 bot.on('end', () => console.log('❌ Bot disconnected.'))
 
-// === AUTO SLEEP SYSTEM ===
+// === AUTO SLEEP SYSTEM  ===
 let sleeping = false
 let manualWakeUp = false
 
@@ -226,6 +226,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
