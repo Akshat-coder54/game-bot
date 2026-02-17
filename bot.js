@@ -28,7 +28,7 @@ bot.once('spawn', () => {
   bot.pathfinder.setMovements(new Movements(bot, mcData))
 })
 
-// === EVENTS ===
+// ===  EVENTS ===
 bot.on('error', err => console.log('⚠️ Error:', err))
 bot.on('end', () => console.log('❌ Bot disconnected.'))
 
@@ -226,6 +226,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
