@@ -1,4 +1,4 @@
-// 🐝 KillerBEE — All-in-one Minecraft Assistant upgrades Bot
+// 🐝 KillerBEE — All-in-one Minecraft Assistant upgrade Bot
 const mineflayer = require('mineflayer')
 const { pathfinder, Movements, goals } = require('mineflayer-pathfinder')
 const armorManager = require('mineflayer-armor-manager')
@@ -226,6 +226,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 })
+
 
 
 
