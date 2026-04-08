@@ -189,7 +189,7 @@ bot.on('chat', async (username, message) => {
     bot.chat('📦 Collected nearby item!')
   }
 
-  // === TRADE WITH VILLAGER ===
+  // === TRADE WITH VILLAGER  ===
   if (msg === 'trade') {
     const villager = bot.nearestEntity(e => e.name === 'villager')
     if (!villager) return bot.chat('😕 No villager nearby.')
