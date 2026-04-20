@@ -9,7 +9,7 @@ const fs = require('fs')
 const path = require('path')
 const { EventEmitter } = require('events')      
 
-// == FIX for deprecated physicTick events ==
+// == FIX for deprecated physicTick events  ==
 const oldEmit = EventEmitter.prototype.emit
 EventEmitter.prototype.emit = function (event, ...args) {
   if (event === 'physicTick') event = 'physicsTick'
