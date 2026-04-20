@@ -211,7 +211,7 @@ bot.on('chat', async (username, message) => {
     }
   }
 
-  // === DOOR / ITEM INTERACTION ===
+  // === DOOR / ITEM INTERACTION === 
   if (msg === 'push') {
     const door = bot.findBlock({ matching: b => b.name.includes('door'), maxDistance: 5 })
     if (!door) return bot.chat('🚪 No door nearby.')
